@@ -21,7 +21,7 @@ const ICONS = {
 
 document.querySelector("#app").innerHTML = `
 <!-- Navigation -->
-<nav class="fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300" id="main-nav">
+<nav class="fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 bg-white" id="main-nav">
   <div class="container-main py-4 flex items-center justify-between">
     <a href="#" class="text-xl font-bold tracking-tight text-gray-900 flex items-center gap-1">
       nithin<span class="w-2 h-2 rounded-full bg-gray-900 inline-block"></span>
@@ -36,7 +36,7 @@ document.querySelector("#app").innerHTML = `
       <a class="nav-link" href="#experience">Experience</a>
       <a class="nav-link" href="#impact">Impact</a>
       <a class="nav-link" href="#building">Building</a>
-      <a href="mailto:\${CONTACT_EMAIL}" class="px-4 py-2 text-sm font-medium text-white bg-gray-900 rounded-full hover:bg-black transition-colors">Contact</a>
+      <a href="mailto:\${CONTACT_EMAIL}" class="px-4 py-2 text-sm font-medium text-white bg-gray-900 rounded-full hover:bg-black transition-colors shadow-sm">Contact</a>
     </div>
   </div>
 
@@ -52,15 +52,14 @@ document.querySelector("#app").innerHTML = `
   </div>
 </nav>
 
-<main class="relative w-full overflow-hidden">
+<main class="relative w-full overflow-hidden bg-white">
 
   <!-- ═══ HERO ═══ -->
-  <section class="relative min-h-[90vh] flex items-center pt-20" id="hero">
-    <div class="bg-grid"></div>
+  <section class="relative min-h-[90vh] flex items-center pt-20 bg-white" id="hero">
     <div class="container-main relative z-10 flex flex-col md:flex-row items-center gap-12 lg:gap-20">
       
       <div class="flex-1 reveal w-full">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 border border-gray-200 text-sm font-medium text-gray-700 mb-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-50 border border-gray-200 text-sm font-medium text-gray-700 mb-6 shadow-sm">
           <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
           Building AI Systems
         </div>
@@ -90,9 +89,8 @@ document.querySelector("#app").innerHTML = `
       </div>
 
       <div class="flex-1 w-full max-w-lg md:max-w-none reveal delay-2">
-        <div class="relative aspect-square md:aspect-[4/5] img-container shadow-2xl shadow-gray-200/50">
-          <img src="/images/hero-tech.jpg" alt="Technology Setup" />
-          <div class="absolute inset-0 bg-gradient-to-tr from-gray-900/20 to-transparent"></div>
+        <div class="relative aspect-square md:aspect-[4/5] img-container shadow-2xl shadow-gray-200/50 rounded-3xl">
+          <img src="/images/hero-tech.jpg" alt="Technology Setup" class="w-full h-full object-cover" />
         </div>
       </div>
 
@@ -100,7 +98,7 @@ document.querySelector("#app").innerHTML = `
   </section>
 
   <!-- ═══ ABOUT: PHILOSOPHY + MINDSET ═══ -->
-  <section class="section-padding bg-gray-50" id="about">
+  <section class="section-padding bg-white" id="about">
     <div class="container-main">
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center reveal">
@@ -113,14 +111,14 @@ document.querySelector("#app").innerHTML = `
             Build fast, execute aggressively, learn constantly. Most people aren't limited by ability — they're limited by the stories they tell themselves. The gap between an idea and a shipped product is just focus and execution.
           </p>
         </div>
-        <div class="order-1 md:order-2 img-container aspect-[4/3] shadow-lg">
-          <img src="/images/philosophy.jpg" alt="Mountain peaks" loading="lazy" />
+        <div class="order-1 md:order-2 img-container aspect-[4/3] shadow-lg rounded-3xl">
+          <img src="/images/philosophy.jpg" alt="Mountain peaks" loading="lazy" class="w-full h-full object-cover" />
         </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center mt-24 reveal">
-        <div class="img-container aspect-[4/3] shadow-lg">
-          <img src="/images/mindset.jpg" alt="Starry mountains" loading="lazy" />
+        <div class="img-container aspect-[4/3] shadow-lg rounded-3xl">
+          <img src="/images/mindset.jpg" alt="Starry mountains" loading="lazy" class="w-full h-full object-cover" />
         </div>
         <div>
           <span class="text-label">Mindset</span>
@@ -144,63 +142,79 @@ document.querySelector("#app").innerHTML = `
 
   <!-- ═══ EXPERIENCE / JOURNEY ═══ -->
   <section class="section-padding bg-white" id="experience">
-    <div class="container-main max-w-3xl">
-      <div class="text-center mb-16 reveal">
+    <div class="container-main max-w-5xl">
+      <div class="text-center mb-16 reveal max-w-2xl mx-auto">
         <span class="text-label">Journey</span>
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-4 tracking-tight">Where I've been</h2>
-        <p class="text-lg text-gray-600 mt-4">Started with curiosity. Built momentum through execution.</p>
+        <p class="text-lg text-gray-600 mt-4 text-pretty">Started with curiosity. Built momentum through execution. From deep engineering to orchestrating scale.</p>
       </div>
 
       <div class="relative reveal delay-1 pl-4 md:pl-0">
         <div class="timeline-line md:left-[50%] md:translate-x-[-1px]"></div>
         
-        <div class="flex flex-col gap-12">
+        <div class="flex flex-col gap-12 md:gap-24">
           
           <div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center">
             <div class="md:w-[45%] md:text-right pb-4 md:pb-0 pl-10 md:pl-0">
-              <span class="text-sm font-bold text-gray-400">Current</span>
-              <h3 class="text-xl font-bold text-gray-900 mt-1">Independent Builder</h3>
-              <p class="text-gray-600 mt-2 text-sm leading-relaxed">AI systems & workflows — building agentic systems that automate real-world work.</p>
+              <span class="text-sm font-bold text-gray-400 uppercase tracking-wider">Current</span>
+              <h3 class="text-2xl font-bold text-gray-900 mt-1">Independent Builder</h3>
+              <p class="text-gray-600 mt-3 leading-relaxed">AI systems & workflows — building agentic systems that automate real-world work. Exploring new paradigms of autonomous agents.</p>
             </div>
             <div class="timeline-dot md:left-[50%] md:translate-x-[-12px]"></div>
-            <div class="md:w-[45%] hidden md:block"></div>
+            <div class="md:w-[45%] hidden md:block pl-12">
+              <div class="img-container aspect-video rounded-3xl shadow-lg border border-gray-100 max-w-[320px] transform hover:-translate-y-2 transition-transform duration-300">
+                <img src="/images/automation.jpg" alt="Automation Illustration" loading="lazy" class="w-full h-full object-cover" />
+              </div>
+            </div>
           </div>
 
           <div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center">
-            <div class="md:w-[45%] hidden md:block"></div>
+            <div class="md:w-[45%] hidden md:block pr-12">
+              <div class="img-container aspect-square md:aspect-video rounded-3xl shadow-lg border border-gray-100 max-w-[320px] ml-auto transform hover:-translate-y-2 transition-transform duration-300">
+                <img src="/images/ai-agents.jpg" alt="AI Analytics" loading="lazy" class="w-full h-full object-cover" />
+              </div>
+            </div>
             <div class="timeline-dot md:left-[50%] md:translate-x-[-12px]"></div>
             <div class="md:w-[45%] pl-10 md:pl-8">
-              <span class="text-sm font-bold text-gray-400">AI/ML Engineering</span>
-              <h3 class="text-xl font-bold text-gray-900 mt-1">Tanla Platforms</h3>
-              <p class="text-gray-600 mt-2 text-sm leading-relaxed">Automation & analytics at scale. Processing massive data volumes efficiently.</p>
+              <span class="text-sm font-bold text-gray-400 uppercase tracking-wider">AI/ML Engineering</span>
+              <h3 class="text-2xl font-bold text-gray-900 mt-1">Tanla Platforms</h3>
+              <p class="text-gray-600 mt-3 leading-relaxed">Automation & analytics at scale. Processing massive data volumes efficiently. Reduced costs massively through architectural optimizations.</p>
             </div>
           </div>
 
           <div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center">
             <div class="md:w-[45%] md:text-right pb-4 md:pb-0 pl-10 md:pl-0">
-              <span class="text-sm font-bold text-gray-400">Product & Integrations</span>
-              <h3 class="text-xl font-bold text-gray-900 mt-1">Sprinklr</h3>
-              <p class="text-gray-600 mt-2 text-sm leading-relaxed">Enterprise SaaS systems. Built resilient products with global engineering teams.</p>
+              <span class="text-sm font-bold text-gray-400 uppercase tracking-wider">Product & Integrations</span>
+              <h3 class="text-2xl font-bold text-gray-900 mt-1">Sprinklr</h3>
+              <p class="text-gray-600 mt-3 leading-relaxed">Enterprise SaaS systems. Built resilient products with global engineering teams, driving core integrations and scale.</p>
             </div>
             <div class="timeline-dot md:left-[50%] md:translate-x-[-12px]"></div>
-            <div class="md:w-[45%] hidden md:block"></div>
+            <div class="md:w-[45%] hidden md:block pl-12">
+               <div class="img-container aspect-video rounded-3xl shadow-lg border border-gray-100 max-w-[320px] transform hover:-translate-y-2 transition-transform duration-300">
+                <img src="/images/experiments.jpg" alt="Experiments" loading="lazy" class="w-full h-full object-cover" />
+              </div>
+            </div>
           </div>
 
           <div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center">
-            <div class="md:w-[45%] hidden md:block"></div>
+            <div class="md:w-[45%] hidden md:block pr-12">
+               <div class="img-container aspect-square md:aspect-video rounded-3xl shadow-lg border border-gray-100 max-w-[320px] ml-auto transform hover:-translate-y-2 transition-transform duration-300">
+                <img src="/images/marketplace.jpg" alt="Data Scale" loading="lazy" class="w-full h-full object-cover opacity-90" />
+              </div>
+            </div>
             <div class="timeline-dot md:left-[50%] md:translate-x-[-12px]"></div>
             <div class="md:w-[45%] pl-10 md:pl-8">
-              <span class="text-sm font-bold text-gray-400">Data & Scale</span>
-              <h3 class="text-xl font-bold text-gray-900 mt-1">Myntra</h3>
-              <p class="text-gray-600 mt-2 text-sm leading-relaxed">Data engineering at one of India's largest e-commerce platforms.</p>
+              <span class="text-sm font-bold text-gray-400 uppercase tracking-wider">Data & Scale</span>
+              <h3 class="text-2xl font-bold text-gray-900 mt-1">Myntra</h3>
+              <p class="text-gray-600 mt-3 leading-relaxed">Data engineering at one of India's largest e-commerce platforms. Handled high-throughput data pipelines and infrastructure.</p>
             </div>
           </div>
 
           <div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center">
             <div class="md:w-[45%] md:text-right pb-4 md:pb-0 pl-10 md:pl-0">
-              <span class="text-sm font-bold text-gray-400">Foundation</span>
-              <h3 class="text-xl font-bold text-gray-900 mt-1">IIT Kanpur</h3>
-              <p class="text-gray-600 mt-2 text-sm leading-relaxed">Learned how to think. Built the mathematical foundation for everything after.</p>
+              <span class="text-sm font-bold text-gray-400 uppercase tracking-wider">Foundation</span>
+              <h3 class="text-2xl font-bold text-gray-900 mt-1">IIT Kanpur</h3>
+              <p class="text-gray-600 mt-3 leading-relaxed">Learned how to think. Built the mathematical foundation for everything after. Honed problem-solving under extreme constraints.</p>
             </div>
             <div class="timeline-dot md:left-[50%] md:translate-x-[-12px]"></div>
             <div class="md:w-[45%] hidden md:block"></div>
@@ -212,94 +226,110 @@ document.querySelector("#app").innerHTML = `
   </section>
 
   <!-- ═══ IMPACT / STATS ═══ -->
-  <section class="py-20 bg-gray-900 text-white" id="impact">
+  <section class="section-padding bg-white" id="impact">
     <div class="container-main">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 reveal">
-        <div class="text-center p-6 border-l border-white/10 first:border-l-0">
-          <div class="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight">12-55x</div>
-          <p class="text-gray-400 text-sm font-medium uppercase tracking-wider">Cost reduction in AI</p>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center reveal">
+        <div>
+          <span class="text-label">Impact</span>
+          <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mt-4 tracking-tight text-balance">
+            Numbers that speak.
+          </h2>
+          <p class="text-lg text-gray-600 leading-relaxed text-pretty mt-6 mb-10">
+            I measure success in outcomes, not lines of code. Whether it's driving down infrastructure costs or automating complex workflows, the goal is always asymmetric leverage.
+          </p>
+          
+          <div class="grid grid-cols-2 gap-6">
+            <div class="p-6 border border-gray-100 rounded-3xl bg-white shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2 tracking-tight">12-55x</div>
+              <p class="text-gray-500 text-xs font-semibold uppercase tracking-wider">Cost reduction in AI</p>
+            </div>
+            <div class="p-6 border border-gray-100 rounded-3xl bg-white shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2 tracking-tight">100+</div>
+              <p class="text-gray-500 text-xs font-semibold uppercase tracking-wider">Campaigns automated</p>
+            </div>
+            <div class="p-6 border border-gray-100 rounded-3xl bg-white shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2 tracking-tight">500M+</div>
+              <p class="text-gray-500 text-xs font-semibold uppercase tracking-wider">Data points analyzed</p>
+            </div>
+            <div class="p-6 border border-gray-100 rounded-3xl bg-white shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2 tracking-tight">1st</div>
+              <p class="text-gray-500 text-xs font-semibold uppercase tracking-wider">Global Hackathon</p>
+            </div>
+          </div>
         </div>
-        <div class="text-center p-6 border-l border-white/10 first:border-l-0">
-          <div class="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight">100+</div>
-          <p class="text-gray-400 text-sm font-medium uppercase tracking-wider">Campaigns automated</p>
-        </div>
-        <div class="text-center p-6 border-l border-white/10 first:border-l-0">
-          <div class="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight">500M+</div>
-          <p class="text-gray-400 text-sm font-medium uppercase tracking-wider">Data points analyzed</p>
-        </div>
-        <div class="text-center p-6 border-l border-white/10 first:border-l-0">
-          <div class="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight">1st</div>
-          <p class="text-gray-400 text-sm font-medium uppercase tracking-wider">Global Hackathon</p>
+        
+        <div class="img-container aspect-square md:aspect-[4/3] shadow-2xl rounded-[2rem] border border-gray-100">
+          <img src="/images/marketplace.jpg" alt="Impact visualization" loading="lazy" class="w-full h-full object-cover" />
         </div>
       </div>
     </div>
   </section>
 
   <!-- ═══ BUILDING / PROJECTS ═══ -->
-  <section class="section-padding bg-gray-50" id="building">
+  <section class="section-padding bg-white" id="building">
     <div class="container-main">
-      <div class="flex flex-col md:flex-row justify-between items-end mb-12 reveal">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal">
         <div class="max-w-xl">
           <span class="text-label">Work</span>
           <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-4 tracking-tight text-balance">What I'm building</h2>
           <p class="text-lg text-gray-600 mt-4 text-pretty">I don't wait for perfect ideas. I start. Then figure it out.</p>
         </div>
         <div class="hidden md:block">
-          <a href="https://github.com/dsrihith" target="_blank" rel="noopener noreferrer" class="text-gray-900 font-medium inline-flex items-center gap-2 hover:opacity-70 transition-opacity">
+          <a href="https://github.com/dsrihith" target="_blank" rel="noopener noreferrer" class="text-gray-900 font-medium inline-flex items-center gap-2 hover:opacity-70 transition-opacity bg-gray-50 px-5 py-3 rounded-full border border-gray-200">
             View all on GitHub \${ICONS.arrowUpRight}
           </a>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal delay-1">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 reveal delay-1">
         
-        <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden card-hover">
-          <div class="aspect-[16/9] overflow-hidden bg-gray-100">
-            <img src="/images/ai-agents.jpg" alt="AI visualization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" loading="lazy" />
+        <div class="group bg-white rounded-3xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="aspect-[16/10] overflow-hidden bg-gray-50 relative p-4">
+            <img src="/images/ai-agents.jpg" alt="AI visualization" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700 ease-in-out shadow-sm" loading="lazy" />
           </div>
           <div class="p-8">
             <h3 class="text-2xl font-bold text-gray-900 mb-3">AI Agents</h3>
             <p class="text-gray-600 leading-relaxed mb-6">Autonomous systems that drive real outcomes, not just demos. Building workflows that augment human capability.</p>
-            <span class="inline-flex items-center text-sm font-semibold text-gray-900 gap-1 group-hover:gap-2 transition-all">
+            <span class="inline-flex items-center text-sm font-bold text-gray-900 gap-1 group-hover:gap-2 transition-all uppercase tracking-wide">
               Explore Project \${ICONS.arrowRight}
             </span>
           </div>
         </div>
 
-        <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden card-hover">
-          <div class="aspect-[16/9] overflow-hidden bg-gray-100">
-            <img src="/images/automation.jpg" alt="Automation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" loading="lazy" />
+        <div class="group bg-white rounded-3xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="aspect-[16/10] overflow-hidden bg-gray-50 relative p-4">
+            <img src="/images/automation.jpg" alt="Automation" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700 ease-in-out shadow-sm" loading="lazy" />
           </div>
           <div class="p-8">
             <h3 class="text-2xl font-bold text-gray-900 mb-3">Automation Systems</h3>
             <p class="text-gray-600 leading-relaxed mb-6">End-to-end pipelines replacing manual workflows. Saving hundreds of hours of repetitive organizational overhead.</p>
-            <span class="inline-flex items-center text-sm font-semibold text-gray-900 gap-1 group-hover:gap-2 transition-all">
+            <span class="inline-flex items-center text-sm font-bold text-gray-900 gap-1 group-hover:gap-2 transition-all uppercase tracking-wide">
               Explore Project \${ICONS.arrowRight}
             </span>
           </div>
         </div>
 
-        <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden card-hover">
-          <div class="aspect-[16/9] overflow-hidden bg-gray-100">
-            <img src="/images/marketplace.jpg" alt="Marketplaces" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" loading="lazy" />
+        <div class="group bg-white rounded-3xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="aspect-[16/10] overflow-hidden bg-gray-50 relative p-4">
+            <img src="/images/marketplace.jpg" alt="Marketplaces" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700 ease-in-out shadow-sm" loading="lazy" />
           </div>
           <div class="p-8">
             <h3 class="text-2xl font-bold text-gray-900 mb-3">Marketplaces</h3>
             <p class="text-gray-600 leading-relaxed mb-6">Connecting supply and demand in new ways. Building the infrastructure and liquidity engines for modern trade.</p>
-            <span class="inline-flex items-center text-sm font-semibold text-gray-900 gap-1 group-hover:gap-2 transition-all">
+            <span class="inline-flex items-center text-sm font-bold text-gray-900 gap-1 group-hover:gap-2 transition-all uppercase tracking-wide">
               Explore Project \${ICONS.arrowRight}
             </span>
           </div>
         </div>
 
-        <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden card-hover">
-          <div class="aspect-[16/9] overflow-hidden bg-gray-100">
-            <img src="/images/experiments.jpg" alt="Experiments" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" loading="lazy" />
+        <div class="group bg-white rounded-3xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="aspect-[16/10] overflow-hidden bg-gray-50 relative p-4">
+            <img src="/images/experiments.jpg" alt="Experiments" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700 ease-in-out shadow-sm" loading="lazy" />
           </div>
           <div class="p-8">
             <h3 class="text-2xl font-bold text-gray-900 mb-3">Experiments</h3>
             <p class="text-gray-600 leading-relaxed mb-6">Rapid product builds to test ideas fast. Validating assumptions through code and early user feedback.</p>
-            <span class="inline-flex items-center text-sm font-semibold text-gray-900 gap-1 group-hover:gap-2 transition-all">
+            <span class="inline-flex items-center text-sm font-bold text-gray-900 gap-1 group-hover:gap-2 transition-all uppercase tracking-wide">
               Explore Project \${ICONS.arrowRight}
             </span>
           </div>
@@ -310,7 +340,7 @@ document.querySelector("#app").innerHTML = `
   </section>
 
   <!-- ═══ PRINCIPLES ═══ -->
-  <section class="section-padding bg-white">
+  <section class="section-padding bg-white border-t border-gray-50">
     <div class="container-main">
       <div class="text-center max-w-2xl mx-auto mb-16 reveal">
         <span class="text-label">Core Values</span>
@@ -319,24 +349,24 @@ document.querySelector("#app").innerHTML = `
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal delay-1">
         
-        <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 text-center card-hover">
-          <div class="w-14 h-14 mx-auto bg-gray-900 text-white rounded-full flex items-center justify-center mb-6">
+        <div class="p-10 rounded-3xl bg-white border border-gray-100 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 mx-auto bg-gray-50 border border-gray-100 text-gray-900 rounded-full flex items-center justify-center mb-6 shadow-sm">
             \${ICONS.zap}
           </div>
           <h3 class="text-xl font-bold text-gray-900 mb-3">Be shameless.</h3>
           <p class="text-gray-600 text-sm leading-relaxed">Try things. Fail publicly. Look stupid. Learn faster than everyone else in the room.</p>
         </div>
 
-        <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 text-center card-hover">
-          <div class="w-14 h-14 mx-auto bg-gray-900 text-white rounded-full flex items-center justify-center mb-6">
+        <div class="p-10 rounded-3xl bg-white border border-gray-100 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 mx-auto bg-gray-50 border border-gray-100 text-gray-900 rounded-full flex items-center justify-center mb-6 shadow-sm">
             \${ICONS.compass}
           </div>
           <h3 class="text-xl font-bold text-gray-900 mb-3">Feel everything.</h3>
           <p class="text-gray-600 text-sm leading-relaxed">Not just comfort. Stress. Fear. Curiosity. Obsession. That's where real growth lives.</p>
         </div>
 
-        <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 text-center card-hover">
-          <div class="w-14 h-14 mx-auto bg-gray-900 text-white rounded-full flex items-center justify-center mb-6">
+        <div class="p-10 rounded-3xl bg-white border border-gray-100 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 mx-auto bg-gray-50 border border-gray-100 text-gray-900 rounded-full flex items-center justify-center mb-6 shadow-sm">
             \${ICONS.activity}
           </div>
           <h3 class="text-xl font-bold text-gray-900 mb-3">Stay fit.</h3>
@@ -348,24 +378,35 @@ document.querySelector("#app").innerHTML = `
   </section>
 
   <!-- ═══ CTA ═══ -->
-  <section class="relative py-32 bg-gray-900 overflow-hidden">
-    <div class="absolute inset-0 opacity-20 mix-blend-overlay">
-      <img src="/images/cta-bg.jpg" alt="" class="w-full h-full object-cover" />
-    </div>
-    
-    <div class="container-main relative z-10 text-center reveal">
-      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">You have two choices.</h2>
-      <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-10 text-pretty">
-        Stay in the loop or <span class="text-white font-semibold">break it.</span>
-      </p>
-      
-      <div class="flex flex-wrap items-center justify-center gap-4">
-        <a href="mailto:\${CONTACT_EMAIL}" class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white text-gray-900 font-bold hover:bg-gray-100 transition-colors shadow-xl">
-          Start building \${ICONS.arrowRight}
-        </a>
-        <a href="\${SOCIAL.linkedin}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-transparent border border-gray-600 text-white font-medium hover:border-white hover:bg-white/5 transition-all">
-          Join my journey
-        </a>
+  <section class="section-padding bg-white">
+    <div class="container-main">
+      <div class="bg-gray-50 rounded-[2.5rem] overflow-hidden border border-gray-100 shadow-xl flex flex-col md:flex-row items-stretch reveal">
+        
+        <div class="p-12 md:p-20 flex-1 flex flex-col justify-center text-center md:text-left">
+          <span class="text-label mb-4 block">Next Steps</span>
+          <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight text-balance">
+            You have two choices.
+          </h2>
+          <p class="text-xl text-gray-600 mb-10 text-pretty">
+            Stay in the loop or <span class="text-gray-900 font-bold">break it.</span>
+          </p>
+          
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
+            <a href="mailto:\${CONTACT_EMAIL}" class="btn-primary">
+              Start building \${ICONS.arrowRight}
+            </a>
+            <a href="\${SOCIAL.linkedin}" target="_blank" rel="noopener noreferrer" class="btn-secondary border-gray-200">
+              Join my journey
+            </a>
+          </div>
+        </div>
+
+        <div class="flex-1 w-full min-h-[300px] md:min-h-[500px] relative p-4 md:p-8 flex items-center justify-center">
+          <div class="w-full h-full relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
+             <img src="/images/cta-bg.jpg" alt="Building the future" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -434,11 +475,11 @@ const nav = document.querySelector("#main-nav");
 const updateNav = () => {
   if (window.scrollY > 20) {
     nav?.classList.add("glass-nav");
-    nav?.classList.remove("bg-transparent", "py-4");
+    nav?.classList.remove("bg-white", "py-4");
     nav?.classList.add("py-3");
   } else {
     nav?.classList.remove("glass-nav", "py-3");
-    nav?.classList.add("bg-transparent", "py-4");
+    nav?.classList.add("bg-white", "py-4");
   }
 };
 window.addEventListener("scroll", updateNav, { passive: true });
