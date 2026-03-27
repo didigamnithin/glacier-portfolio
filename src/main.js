@@ -36,7 +36,7 @@ document.querySelector("#app").innerHTML = `
       <a class="nav-link" href="#experience">Experience</a>
       <a class="nav-link" href="#impact">Impact</a>
       <a class="nav-link" href="#building">Building</a>
-      <a href="mailto:\${CONTACT_EMAIL}" class="btn-glass-dark py-2.5 px-6 text-sm">Contact</a>
+      <a href="mailto:${CONTACT_EMAIL}" class="btn-glass-dark py-2.5 px-6 text-sm">Contact</a>
     </div>
   </div>
 
@@ -47,8 +47,8 @@ document.querySelector("#app").innerHTML = `
       <a class="mobile-nav-link text-gray-600 font-semibold text-lg" href="#experience">Experience</a>
       <a class="mobile-nav-link text-gray-600 font-semibold text-lg" href="#impact">Impact</a>
       <a class="mobile-nav-link text-gray-600 font-semibold text-lg" href="#building">Building</a>
-      <a class="mobile-nav-link text-gray-900 font-bold text-lg pt-4 border-t border-gray-50 flex items-center justify-between" href="mailto:\${CONTACT_EMAIL}">
-        Contact \${ICONS.arrowRight}
+      <a class="mobile-nav-link text-gray-900 font-bold text-lg pt-4 border-t border-gray-50 flex items-center justify-between" href="mailto:${CONTACT_EMAIL}">
+        Contact ${ICONS.arrowRight}
       </a>
     </div>
   </div>
@@ -76,7 +76,7 @@ document.querySelector("#app").innerHTML = `
         
         <div class="flex flex-wrap items-center justify-center md:justify-start gap-5 reveal delay-1">
           <a href="#about" class="btn-glass-dark">
-            Let's Talk \${ICONS.arrowRight}
+            Let's Talk ${ICONS.arrowRight}
           </a>
           <a href="#building" class="btn-glass-light">
             View Work
@@ -84,9 +84,9 @@ document.querySelector("#app").innerHTML = `
         </div>
         
         <div class="flex items-center justify-center md:justify-start gap-8 mt-16 reveal delay-2">
-          <a href="\${SOCIAL.linkedin}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-900 transition-all transform hover:scale-110" aria-label="LinkedIn">\${ICONS.linkedin}</a>
-          <a href="\${SOCIAL.github}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-900 transition-all transform hover:scale-110" aria-label="GitHub">\${ICONS.github}</a>
-          <a href="\${SOCIAL.x}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-900 transition-all transform hover:scale-110" aria-label="X">\${ICONS.x}</a>
+          <a href="${SOCIAL.linkedin}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-900 transition-all transform hover:scale-110" aria-label="LinkedIn">${ICONS.linkedin}</a>
+          <a href="${SOCIAL.github}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-900 transition-all transform hover:scale-110" aria-label="GitHub">${ICONS.github}</a>
+          <a href="${SOCIAL.x}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-900 transition-all transform hover:scale-110" aria-label="X">${ICONS.x}</a>
         </div>
       </div>
 
@@ -279,7 +279,7 @@ document.querySelector("#app").innerHTML = `
         </div>
         <div class="hidden md:block">
           <a href="https://github.com/dsrihith" target="_blank" rel="noopener noreferrer" class="btn-glass-light border-gray-100">
-            View on GitHub \${ICONS.arrowUpRight}
+            View on GitHub ${ICONS.arrowUpRight}
           </a>
         </div>
       </div>
@@ -294,7 +294,7 @@ document.querySelector("#app").innerHTML = `
             <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tighter">AI Agents</h3>
             <p class="text-lg text-gray-500 leading-relaxed mb-8">Autonomous systems that drive real outcomes, not just demos. Building workflows that augment human capability.</p>
             <span class="inline-flex items-center text-sm font-black text-gray-900 gap-2 group-hover:gap-4 transition-all uppercase tracking-widest">
-              Explore Project \${ICONS.arrowRight}
+              Explore Project ${ICONS.arrowRight}
             </span>
           </div>
         </div>
@@ -307,7 +307,7 @@ document.querySelector("#app").innerHTML = `
             <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tighter">Automation Systems</h3>
             <p class="text-lg text-gray-500 leading-relaxed mb-8">End-to-end pipelines replacing manual workflows. Saving hundreds of hours of repetitive organizational overhead.</p>
             <span class="inline-flex items-center text-sm font-black text-gray-900 gap-2 group-hover:gap-4 transition-all uppercase tracking-widest">
-              Explore Project \${ICONS.arrowRight}
+              Explore Project ${ICONS.arrowRight}
             </span>
           </div>
         </div>
@@ -320,7 +320,7 @@ document.querySelector("#app").innerHTML = `
             <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tighter">Marketplaces</h3>
             <p class="text-lg text-gray-500 leading-relaxed mb-8">Connecting supply and demand in new ways. Building the infrastructure and liquidity engines for modern trade.</p>
             <span class="inline-flex items-center text-sm font-black text-gray-900 gap-2 group-hover:gap-4 transition-all uppercase tracking-widest">
-              Explore Project \${ICONS.arrowRight}
+              Explore Project ${ICONS.arrowRight}
             </span>
           </div>
         </div>
@@ -333,7 +333,7 @@ document.querySelector("#app").innerHTML = `
             <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tighter">Experiments</h3>
             <p class="text-lg text-gray-500 leading-relaxed mb-8">Rapid product builds to test ideas fast. Validating assumptions through code and early user feedback.</p>
             <span class="inline-flex items-center text-sm font-black text-gray-900 gap-2 group-hover:gap-4 transition-all uppercase tracking-widest">
-              Explore Project \${ICONS.arrowRight}
+              Explore Project ${ICONS.arrowRight}
             </span>
           </div>
         </div>
@@ -354,7 +354,7 @@ document.querySelector("#app").innerHTML = `
         
         <div class="p-12 rounded-[2.5rem] bg-white border border-gray-50 text-center shadow-sm hover:shadow-2xl transition-all duration-500">
           <div class="w-20 h-20 mx-auto bg-gray-900 text-white rounded-3xl flex items-center justify-center mb-8 shadow-xl transform rotate-3">
-            \${ICONS.zap}
+            ${ICONS.zap}
           </div>
           <h3 class="text-2xl font-black text-gray-900 mb-4 tracking-tighter">Be shameless.</h3>
           <p class="text-gray-500 leading-relaxed">Try things. Fail publicly. Look stupid. Learn faster than everyone else in the room.</p>
@@ -362,7 +362,7 @@ document.querySelector("#app").innerHTML = `
 
         <div class="p-12 rounded-[2.5rem] bg-white border border-gray-50 text-center shadow-sm hover:shadow-2xl transition-all duration-500">
           <div class="w-20 h-20 mx-auto bg-gray-50 border border-gray-100 text-gray-900 rounded-3xl flex items-center justify-center mb-8 shadow-xl transform -rotate-3">
-            \${ICONS.compass}
+            ${ICONS.compass}
           </div>
           <h3 class="text-2xl font-black text-gray-900 mb-4 tracking-tighter">Feel everything.</h3>
           <p class="text-gray-500 leading-relaxed">Not just comfort. Stress. Fear. Curiosity. Obsession. That's where real growth lives.</p>
@@ -370,7 +370,7 @@ document.querySelector("#app").innerHTML = `
 
         <div class="p-12 rounded-[2.5rem] bg-white border border-gray-50 text-center shadow-sm hover:shadow-2xl transition-all duration-500">
           <div class="w-20 h-20 mx-auto bg-gray-900 text-white rounded-3xl flex items-center justify-center mb-8 shadow-xl transform rotate-6">
-            \${ICONS.activity}
+            ${ICONS.activity}
           </div>
           <h3 class="text-2xl font-black text-gray-900 mb-4 tracking-tighter">Stay fit.</h3>
           <p class="text-gray-500 leading-relaxed">So you can travel, explore, trek, live fully. Optimize your health not just for now, but for later too.</p>
@@ -395,10 +395,10 @@ document.querySelector("#app").innerHTML = `
           </p>
           
           <div class="flex flex-wrap items-center justify-center md:justify-start gap-6">
-            <a href="mailto:\${CONTACT_EMAIL}" class="btn-glass-light py-4 px-10 text-lg">
-              Start building \${ICONS.arrowRight}
+            <a href="mailto:${CONTACT_EMAIL}" class="btn-glass-light py-4 px-10 text-lg">
+              Start building ${ICONS.arrowRight}
             </a>
-            <a href="\${SOCIAL.linkedin}" target="_blank" rel="noopener noreferrer" class="btn-glass-dark border-white/20 py-4 px-10 text-lg">
+            <a href="${SOCIAL.linkedin}" target="_blank" rel="noopener noreferrer" class="btn-glass-dark border-white/20 py-4 px-10 text-lg">
               Join my journey
             </a>
           </div>
@@ -424,9 +424,9 @@ document.querySelector("#app").innerHTML = `
     </div>
     
     <div class="flex items-center gap-10">
-      <a href="\${SOCIAL.linkedin}" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-gray-900 transition-all transform hover:scale-125" aria-label="LinkedIn">\${ICONS.linkedin}</a>
-      <a href="\${SOCIAL.github}" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-gray-900 transition-all transform hover:scale-125" aria-label="GitHub">\${ICONS.github}</a>
-      <a href="\${SOCIAL.x}" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-gray-900 transition-all transform hover:scale-125" aria-label="X">\${ICONS.x}</a>
+      <a href="${SOCIAL.linkedin}" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-gray-900 transition-all transform hover:scale-125" aria-label="LinkedIn">${ICONS.linkedin}</a>
+      <a href="${SOCIAL.github}" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-gray-900 transition-all transform hover:scale-125" aria-label="GitHub">${ICONS.github}</a>
+      <a href="${SOCIAL.x}" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-gray-900 transition-all transform hover:scale-125" aria-label="X">${ICONS.x}</a>
     </div>
   </div>
 </footer>
