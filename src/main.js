@@ -160,22 +160,18 @@ document.querySelector("#app").innerHTML = `
           <div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center">
             <div class="md:w-[45%] md:text-right pb-6 md:pb-0 pl-12 md:pl-0">
               <span class="text-sm font-black text-gray-300 uppercase tracking-widest">Current</span>
-              <h3 class="text-3xl font-black text-gray-900 mt-2">Independent Builder</h3>
+              <h3 class="text-3xl font-black text-gray-900 mt-2">AI Consultant</h3>
               <p class="text-lg text-gray-500 mt-4 leading-relaxed">AI systems & workflows — building agentic systems that automate real-world work. Exploring new paradigms of autonomous agents.</p>
             </div>
             <div class="timeline-dot md:left-[50%] md:translate-x-[-12px]"></div>
             <div class="md:w-[45%] hidden md:block pl-16">
-              <div class="img-container aspect-video rounded-[2rem] shadow-2xl border border-gray-50 max-w-[400px] transform hover:-translate-y-3 transition-all duration-500">
-                <img src="/images/automation.jpg" alt="Automation Illustration" loading="lazy" class="w-full h-full object-cover" />
-              </div>
+              <div class="w-32 h-32 rounded-[2rem] shadow-xl border border-gray-100 flex items-center justify-center p-6 bg-white transform hover:-translate-y-2 transition-all duration-300 ml-0"><svg width="100%" height="100%" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">  <rect width="100" height="100" rx="20" fill="#111827"/>  <path d="M30 70V30L50 50L70 30V70" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
             </div>
           </div>
 
           <div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center">
             <div class="md:w-[45%] hidden md:block pr-16">
-              <div class="img-container aspect-square md:aspect-video rounded-[2rem] shadow-2xl border border-gray-50 max-w-[400px] ml-auto transform hover:-translate-y-3 transition-all duration-500">
-                <img src="/images/ai-agents.jpg" alt="AI Analytics" loading="lazy" class="w-full h-full object-cover" />
-              </div>
+              <div class="w-32 h-32 rounded-[2rem] shadow-xl border border-gray-100 flex items-center justify-center p-6 bg-white transform hover:-translate-y-2 transition-all duration-300 ml-auto"><img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.tanla.com&size=256" alt="Company Logo" loading="lazy" class="w-full h-full object-contain" /></div>
             </div>
             <div class="timeline-dot md:left-[50%] md:translate-x-[-12px]"></div>
             <div class="md:w-[45%] pl-12 md:pl-16">
@@ -193,17 +189,13 @@ document.querySelector("#app").innerHTML = `
             </div>
             <div class="timeline-dot md:left-[50%] md:translate-x-[-12px]"></div>
             <div class="md:w-[45%] hidden md:block pl-16">
-               <div class="img-container aspect-video rounded-[2rem] shadow-2xl border border-gray-50 max-w-[400px] transform hover:-translate-y-3 transition-all duration-500">
-                <img src="/images/experiments.jpg" alt="Experiments" loading="lazy" class="w-full h-full object-cover" />
-              </div>
+               <div class="w-32 h-32 rounded-[2rem] shadow-xl border border-gray-100 flex items-center justify-center p-6 bg-white transform hover:-translate-y-2 transition-all duration-300 ml-0"><img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.sprinklr.com&size=256" alt="Company Logo" loading="lazy" class="w-full h-full object-contain" /></div>
             </div>
           </div>
 
           <div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center">
             <div class="md:w-[45%] hidden md:block pr-16">
-               <div class="img-container aspect-square md:aspect-video rounded-[2rem] shadow-2xl border border-gray-50 max-w-[400px] ml-auto transform hover:-translate-y-3 transition-all duration-500">
-                <img src="/images/marketplace.jpg" alt="Data Scale" loading="lazy" class="w-full h-full object-cover opacity-90" />
-              </div>
+               <div class="w-32 h-32 rounded-[2rem] shadow-xl border border-gray-100 flex items-center justify-center p-6 bg-white transform hover:-translate-y-2 transition-all duration-300 ml-auto"><img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.myntra.com&size=256" alt="Company Logo" loading="lazy" class="w-full h-full object-contain" /></div>
             </div>
             <div class="timeline-dot md:left-[50%] md:translate-x-[-12px]"></div>
             <div class="md:w-[45%] pl-12 md:pl-16">
@@ -220,9 +212,44 @@ document.querySelector("#app").innerHTML = `
               <p class="text-lg text-gray-500 mt-4 leading-relaxed">Learned how to think. Built the mathematical foundation for everything after. Honed problem-solving under extreme constraints.</p>
             </div>
             <div class="timeline-dot md:left-[50%] md:translate-x-[-12px]"></div>
-            <div class="md:w-[45%] hidden md:block"></div>
+            <div class="md:w-[45%] hidden md:block pl-16">
+               <div class="w-32 h-32 rounded-[2rem] shadow-xl border border-gray-100 flex items-center justify-center p-6 bg-white transform hover:-translate-y-2 transition-all duration-300 ml-0"><img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.iitk.ac.in&size=256" alt="IIT Kanpur Logo" loading="lazy" class="w-full h-full object-contain" /></div>
+            </div>
           </div>
 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ═══ ACHIEVEMENTS ═══ -->
+  <section class="section-padding bg-white border-t border-gray-50" id="achievements">
+    <div class="container-main max-w-5xl">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <span class="text-label">Milestones</span>
+        <h2 class="text-4xl md:text-5xl font-black text-gray-900 mt-4 tracking-tighter">Selected Achievements</h2>
+      </div>
+      
+      <div class="flex flex-col gap-6 reveal delay-1">
+        <div class="p-8 rounded-[2rem] border border-gray-100 bg-white hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row items-start md:items-center gap-6">
+          <div class="w-16 h-16 rounded-2xl bg-gray-50 flex items-center justify-center flex-shrink-0 text-gray-900 border border-gray-100 shadow-sm">
+             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Winner, Global AI Summit Hackathon 2024</h3>
+            <p class="text-gray-500 leading-relaxed text-lg">Built 'Flatmates', an AI-driven app to match users with perfect roommates using complex preference analysis. Awarded <strong class="text-gray-900 font-semibold">₹5 Lakh</strong> first prize among top global developers.</p>
+          </div>
+        </div>
+
+        <div class="p-8 rounded-[2rem] border border-gray-100 bg-white hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row items-start md:items-center gap-6">
+          <div class="w-16 h-16 rounded-2xl bg-gray-50 flex items-center justify-center flex-shrink-0 text-gray-900 border border-gray-100 shadow-sm">
+             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Founder, Nhancio AI Agency</h3>
+            <p class="text-gray-500 leading-relaxed text-lg">Founded and leading an AI agency specializing in data science, intelligent agents, and automated marketing workflows, creating highly scalable digital solutions.</p>
+          </div>
         </div>
       </div>
     </div>
