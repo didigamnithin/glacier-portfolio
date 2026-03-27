@@ -32,23 +32,23 @@ document.querySelector("#app").innerHTML = `
     </button>
 
     <div class="hidden md:flex items-center gap-10">
-      <a class="nav-link" href="#about">About</a>
-      <a class="nav-link" href="#experience">Experience</a>
-      <a class="nav-link" href="#impact">Impact</a>
-      <a class="nav-link" href="#building">Building</a>
-      <a href="mailto:${CONTACT_EMAIL}" class="btn-glass-dark py-2.5 px-6 text-sm">Contact</a>
+      <a class="nav-link" href="#about">Why I exist</a>
+      <a class="nav-link" href="#experience">The Hard Way</a>
+      <a class="nav-link" href="#impact">Metrics</a>
+      <a class="nav-link" href="#building">Killed Ideas</a>
+      <a href="mailto:${CONTACT_EMAIL}" class="btn-glass-dark py-2.5 px-6 text-sm">Build something</a>
     </div>
   </div>
 
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-3xl border-b border-gray-100 shadow-2xl">
     <div class="container-main py-6 flex flex-col gap-5">
-      <a class="mobile-nav-link text-gray-600 font-semibold text-lg" href="#about">About</a>
-      <a class="mobile-nav-link text-gray-600 font-semibold text-lg" href="#experience">Experience</a>
-      <a class="mobile-nav-link text-gray-600 font-semibold text-lg" href="#impact">Impact</a>
-      <a class="mobile-nav-link text-gray-600 font-semibold text-lg" href="#building">Building</a>
+      <a class="mobile-nav-link text-gray-600 font-semibold text-lg" href="#about">Why I exist</a>
+      <a class="mobile-nav-link text-gray-600 font-semibold text-lg" href="#experience">The Hard Way</a>
+      <a class="mobile-nav-link text-gray-600 font-semibold text-lg" href="#impact">Metrics</a>
+      <a class="mobile-nav-link text-gray-600 font-semibold text-lg" href="#building">Killed Ideas</a>
       <a class="mobile-nav-link text-gray-900 font-bold text-lg pt-4 border-t border-gray-50 flex items-center justify-between" href="mailto:${CONTACT_EMAIL}">
-        Contact ${ICONS.arrowRight}
+        Build something ${ICONS.arrowRight}
       </a>
     </div>
   </div>
@@ -63,23 +63,23 @@ document.querySelector("#app").innerHTML = `
       <div class="flex-1 reveal w-full text-center md:text-left">
         <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-gray-50 border border-gray-100 text-xs font-bold text-gray-500 mb-8 shadow-sm tracking-widest uppercase">
           <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-          Engineering 2026 Standard
+          Speed > Perfection
         </div>
         
         <h1 class="text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter text-gray-900 leading-[0.9] text-balance mb-8">
-          Build things<br>that <span class="gradient-text">matter.</span>
+          Ideas are cheap.<br>I <span class="gradient-text">deploy.</span>
         </h1>
         
         <p class="text-xl md:text-2xl text-gray-500 max-w-xl text-pretty leading-relaxed mb-12 mx-auto md:mx-0">
-          Engineer at heart, builder by design. I design AI systems and ship products fast. High-leverage outcomes only.
+          I don't plan products. I ship them. Building 0→1 products every month. Some break. Some print. AI is my co-founder.
         </p>
         
         <div class="flex flex-wrap items-center justify-center md:justify-start gap-5 reveal delay-1">
           <a href="#about" class="btn-glass-dark">
-            Let's Talk ${ICONS.arrowRight}
+            Build something stupid ${ICONS.arrowRight}
           </a>
           <a href="#building" class="btn-glass-light">
-            View Work
+            Active Experiments
           </a>
         </div>
         
@@ -106,12 +106,12 @@ document.querySelector("#app").innerHTML = `
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-32 items-center reveal">
         <div class="order-2 md:order-1">
-          <span class="text-label">Philosophy</span>
+          <span class="text-label">Mental Models</span>
           <h2 class="text-4xl md:text-5xl font-black text-gray-900 mt-6 mb-8 tracking-tighter text-balance">
-            I don't believe in invisible limits.
+            If users don't pay, it's a hobby.
           </h2>
           <p class="text-xl text-gray-500 leading-relaxed text-pretty">
-            Build fast, execute aggressively, learn constantly. Most people aren't limited by ability — they're limited by the stories they tell themselves. The gap between an idea and a shipped product is just focus and execution.
+            Ship fast. Perfect later. Built an MVP in 3 days. No one cared. Spent ₹5k on ads. Learned CAC > IQ. Faster feedback is the only unfair advantage.
           </p>
         </div>
         <div class="order-1 md:order-2 img-container aspect-[4/3] shadow-2xl rounded-[2.5rem]">
@@ -124,18 +124,18 @@ document.querySelector("#app").innerHTML = `
           <img src="/images/mindset.jpg" alt="Starry mountains" loading="lazy" class="w-full h-full object-cover" />
         </div>
         <div>
-          <span class="text-label">Mindset</span>
+          <span class="text-label">The brutal truth</span>
           <h2 class="text-4xl md:text-5xl font-black text-gray-900 mt-6 mb-8 tracking-tighter text-balance">
-            The asymmetric life.
+            Code into cashflows.
           </h2>
           <p class="text-xl text-gray-500 leading-relaxed text-pretty mb-10">
-            Life doesn't have to be linear. You don't need 1,000 moves — you need a few asymmetric ones. Optimize for learning rate, surround yourself with builders, and create high-leverage outcomes.
+            Most ideas fail. Good. If it scales, I stay. If not, I kill it. The internet is my playground, and I don't chase trends. I test them.
           </p>
           <div class="flex flex-wrap gap-4">
-            <span class="px-6 py-2.5 rounded-full bg-gray-50 border border-gray-100 text-sm font-bold text-gray-700 shadow-sm">Build habits</span>
-            <span class="px-6 py-2.5 rounded-full bg-gray-50 border border-gray-100 text-sm font-bold text-gray-700 shadow-sm">Learn by doing</span>
-            <span class="px-6 py-2.5 rounded-full bg-gray-50 border border-gray-100 text-sm font-bold text-gray-700 shadow-sm">Execute with urgency</span>
-            <span class="px-6 py-2.5 rounded-full bg-gray-50 border border-gray-100 text-sm font-bold text-gray-700 shadow-sm">Stay around builders</span>
+            <span class="px-6 py-2.5 rounded-full bg-gray-50 border border-gray-100 text-sm font-bold text-gray-700 shadow-sm">Ship fast</span>
+            <span class="px-6 py-2.5 rounded-full bg-gray-50 border border-gray-100 text-sm font-bold text-gray-700 shadow-sm">Distribution first</span>
+            <span class="px-6 py-2.5 rounded-full bg-gray-50 border border-gray-100 text-sm font-bold text-gray-700 shadow-sm">Code when needed</span>
+            <span class="px-6 py-2.5 rounded-full bg-gray-50 border border-gray-100 text-sm font-bold text-gray-700 shadow-sm">No-code when lazy</span>
           </div>
         </div>
       </div>
@@ -147,9 +147,9 @@ document.querySelector("#app").innerHTML = `
   <section class="section-padding bg-white" id="experience">
     <div class="container-main max-w-6xl">
       <div class="text-center mb-20 reveal max-w-2xl mx-auto">
-        <span class="text-label">Evolution</span>
-        <h2 class="text-5xl md:text-6xl font-black text-gray-900 mt-6 tracking-tighter">Where I've been</h2>
-        <p class="text-xl text-gray-500 mt-6 text-pretty leading-relaxed">Started with curiosity. Built momentum through execution. From deep engineering to orchestrating scale.</p>
+        <span class="text-label">Speed Log</span>
+        <h2 class="text-5xl md:text-6xl font-black text-gray-900 mt-6 tracking-tighter">Where I learned the hard way</h2>
+        <p class="text-xl text-gray-500 mt-6 text-pretty leading-relaxed">Built MVPs in 6 hours. Shipped features in 1 night. Pivoted in 48 hrs. Here's the log.</p>
       </div>
 
       <div class="relative reveal delay-1">
@@ -161,7 +161,7 @@ document.querySelector("#app").innerHTML = `
             <div class="md:w-[45%] md:text-right pb-6 md:pb-0 pl-12 md:pl-0">
               <span class="text-sm font-black text-gray-300 uppercase tracking-widest">Current</span>
               <h3 class="text-3xl font-black text-gray-900 mt-2">AI Consultant</h3>
-              <p class="text-lg text-gray-500 mt-4 leading-relaxed">AI systems & workflows — building agentic systems that automate real-world work. Exploring new paradigms of autonomous agents.</p>
+              <p class="text-lg text-gray-500 mt-4 leading-relaxed">Building agents that work while I sleep. Running experiments on the internet. Turning code into cashflows.</p>
             </div>
             <div class="timeline-dot md:left-[50%] md:translate-x-[-12px]"></div>
             <div class="md:w-[45%] hidden md:block pl-16">
@@ -227,7 +227,7 @@ document.querySelector("#app").innerHTML = `
   <section class="section-padding bg-white border-t border-gray-50" id="achievements">
     <div class="container-main max-w-5xl">
       <div class="text-center max-w-2xl mx-auto mb-16 reveal">
-        <span class="text-label">Milestones</span>
+        <span class="text-label">Outcomes</span>
         <h2 class="text-4xl md:text-5xl font-black text-gray-900 mt-4 tracking-tighter">Selected Achievements</h2>
       </div>
       
@@ -260,12 +260,12 @@ document.querySelector("#app").innerHTML = `
     <div class="container-main">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-32 items-center reveal">
         <div>
-          <span class="text-label">Evidence</span>
+          <span class="text-label">Metrics</span>
           <h2 class="text-5xl md:text-6xl font-black text-gray-900 mt-6 tracking-tighter text-balance leading-[1.1]">
-            Numbers that speak.
+            If it doesn't earn, it doesn't stay.
           </h2>
           <p class="text-xl text-gray-500 leading-relaxed text-pretty mt-8 mb-12">
-            I measure success in outcomes, not lines of code. Whether it's driving down infrastructure costs or automating complex workflows, the goal is always asymmetric leverage.
+            Turning code into cashflows. Here are the brutal metrics of what happens when you prioritize speed, distribution, and asymmetric leverage.
           </p>
           
           <div class="grid grid-cols-2 gap-8">
@@ -300,9 +300,9 @@ document.querySelector("#app").innerHTML = `
     <div class="container-main">
       <div class="flex flex-col md:flex-row justify-between items-end mb-20 reveal">
         <div class="max-w-xl text-center md:text-left">
-          <span class="text-label">The Lab</span>
-          <h2 class="text-5xl md:text-6xl font-black text-gray-900 mt-6 tracking-tighter text-balance">What I'm building</h2>
-          <p class="text-xl text-gray-500 mt-6 text-pretty leading-relaxed">I don't wait for perfect ideas. I start. Then figure it out. Proof of craft in every line.</p>
+          <span class="text-label">Active Experiments</span>
+          <h2 class="text-5xl md:text-6xl font-black text-gray-900 mt-6 tracking-tighter text-balance">Things I've shipped</h2>
+          <p class="text-xl text-gray-500 mt-6 text-pretty leading-relaxed">Currently obsessed with building things that shouldn't work. Most fail. The rest compound.</p>
         </div>
         <div class="hidden md:block">
           <a href="https://github.com/dsrihith" target="_blank" rel="noopener noreferrer" class="btn-glass-light border-gray-100">
@@ -318,8 +318,8 @@ document.querySelector("#app").innerHTML = `
             <img src="/images/ai-agents.jpg" alt="AI visualization" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-all duration-700 ease-in-out shadow-lg" loading="lazy" />
           </div>
           <div class="p-10">
-            <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tighter">AI Agents</h3>
-            <p class="text-lg text-gray-500 leading-relaxed mb-8">Autonomous systems that drive real outcomes, not just demos. Building workflows that augment human capability.</p>
+            <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tighter">AgentlyBot</h3>
+            <p class="text-lg text-gray-500 leading-relaxed mb-8">Marketplace for AI agents.<br><br><strong class="text-gray-900">Status:</strong> Scaling 📈<br><strong class="text-gray-900">Lesson:</strong> AI is leverage, not magic.</p>
             <span class="inline-flex items-center text-sm font-black text-gray-900 gap-2 group-hover:gap-4 transition-all uppercase tracking-widest">
               Explore Project ${ICONS.arrowRight}
             </span>
@@ -331,8 +331,8 @@ document.querySelector("#app").innerHTML = `
             <img src="/images/automation.jpg" alt="Automation" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-all duration-700 ease-in-out shadow-lg" loading="lazy" />
           </div>
           <div class="p-10">
-            <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tighter">Automation Systems</h3>
-            <p class="text-lg text-gray-500 leading-relaxed mb-8">End-to-end pipelines replacing manual workflows. Saving hundreds of hours of repetitive organizational overhead.</p>
+            <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tighter">Thryft</h3>
+            <p class="text-lg text-gray-500 leading-relaxed mb-8">Second-hand luxury, GenZ focused.<br><br><strong class="text-gray-900">Status:</strong> Killing it 💸<br><strong class="text-gray-900">Lesson:</strong> Distribution > Product.</p>
             <span class="inline-flex items-center text-sm font-black text-gray-900 gap-2 group-hover:gap-4 transition-all uppercase tracking-widest">
               Explore Project ${ICONS.arrowRight}
             </span>
@@ -344,8 +344,8 @@ document.querySelector("#app").innerHTML = `
             <img src="/images/marketplace.jpg" alt="Marketplaces" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-all duration-700 ease-in-out shadow-lg" loading="lazy" />
           </div>
           <div class="p-10">
-            <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tighter">Marketplaces</h3>
-            <p class="text-lg text-gray-500 leading-relaxed mb-8">Connecting supply and demand in new ways. Building the infrastructure and liquidity engines for modern trade.</p>
+            <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tighter">Nhancio</h3>
+            <p class="text-lg text-gray-500 leading-relaxed mb-8">AI education and automation for businesses.<br><br><strong class="text-gray-900">Status:</strong> Live & Printing 🟢<br><strong class="text-gray-900">Lesson:</strong> Users pay for outcomes, not features.</p>
             <span class="inline-flex items-center text-sm font-black text-gray-900 gap-2 group-hover:gap-4 transition-all uppercase tracking-widest">
               Explore Project ${ICONS.arrowRight}
             </span>
@@ -357,8 +357,8 @@ document.querySelector("#app").innerHTML = `
             <img src="/images/experiments.jpg" alt="Experiments" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-all duration-700 ease-in-out shadow-lg" loading="lazy" />
           </div>
           <div class="p-10">
-            <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tighter">Experiments</h3>
-            <p class="text-lg text-gray-500 leading-relaxed mb-8">Rapid product builds to test ideas fast. Validating assumptions through code and early user feedback.</p>
+            <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tighter">Killed Ideas</h3>
+            <p class="text-lg text-gray-500 leading-relaxed mb-8">Built an AI wrapper in 3 days. No one cared.<br><br><strong class="text-gray-900">Status:</strong> Dead 💀<br><strong class="text-gray-900">Lesson:</strong> Cool idea. Zero distribution.</p>
             <span class="inline-flex items-center text-sm font-black text-gray-900 gap-2 group-hover:gap-4 transition-all uppercase tracking-widest">
               Explore Project ${ICONS.arrowRight}
             </span>
@@ -373,8 +373,8 @@ document.querySelector("#app").innerHTML = `
   <section class="section-padding bg-white border-t border-gray-50">
     <div class="container-main">
       <div class="text-center max-w-2xl mx-auto mb-20 reveal">
-        <span class="text-label">Core Values</span>
-        <h2 class="text-4xl md:text-5xl font-black text-gray-900 mt-6 tracking-tighter">Guiding Principles</h2>
+        <span class="text-label">The Stack</span>
+        <h2 class="text-4xl md:text-5xl font-black text-gray-900 mt-6 tracking-tighter">Mental Models I Use</h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10 reveal delay-1">
@@ -383,24 +383,24 @@ document.querySelector("#app").innerHTML = `
           <div class="w-20 h-20 mx-auto bg-gray-900 text-white rounded-3xl flex items-center justify-center mb-8 shadow-xl transform rotate-3">
             ${ICONS.zap}
           </div>
-          <h3 class="text-2xl font-black text-gray-900 mb-4 tracking-tighter">Be shameless.</h3>
-          <p class="text-gray-500 leading-relaxed">Try things. Fail publicly. Look stupid. Learn faster than everyone else in the room.</p>
+          <h3 class="text-2xl font-black text-gray-900 mb-4 tracking-tighter">Ship > Perfect</h3>
+          <p class="text-gray-500 leading-relaxed">Try things. Fail publicly. Launch, get 100 users, pivot in 48 hours. Speed over everything.</p>
         </div>
 
         <div class="p-12 rounded-[2.5rem] bg-white border border-gray-50 text-center shadow-sm hover:shadow-2xl transition-all duration-500">
           <div class="w-20 h-20 mx-auto bg-gray-50 border border-gray-100 text-gray-900 rounded-3xl flex items-center justify-center mb-8 shadow-xl transform -rotate-3">
             ${ICONS.compass}
           </div>
-          <h3 class="text-2xl font-black text-gray-900 mb-4 tracking-tighter">Feel everything.</h3>
-          <p class="text-gray-500 leading-relaxed">Not just comfort. Stress. Fear. Curiosity. Obsession. That's where real growth lives.</p>
+          <h3 class="text-2xl font-black text-gray-900 mb-4 tracking-tighter">Distribution First</h3>
+          <p class="text-gray-500 leading-relaxed">A cool product with zero distribution is a dead product. Build the audience, then write the code.</p>
         </div>
 
         <div class="p-12 rounded-[2.5rem] bg-white border border-gray-50 text-center shadow-sm hover:shadow-2xl transition-all duration-500">
           <div class="w-20 h-20 mx-auto bg-gray-900 text-white rounded-3xl flex items-center justify-center mb-8 shadow-xl transform rotate-6">
             ${ICONS.activity}
           </div>
-          <h3 class="text-2xl font-black text-gray-900 mb-4 tracking-tighter">Stay fit.</h3>
-          <p class="text-gray-500 leading-relaxed">So you can travel, explore, trek, live fully. Optimize your health not just for now, but for later too.</p>
+          <h3 class="text-2xl font-black text-gray-900 mb-4 tracking-tighter">AI is my co-founder</h3>
+          <p class="text-gray-500 leading-relaxed">GPT + APIs = unfair advantage. Supabase for speed. No-code when lazy. Code when needed.</p>
         </div>
 
       </div>
@@ -413,17 +413,17 @@ document.querySelector("#app").innerHTML = `
       <div class="bg-gray-900 rounded-[3rem] overflow-hidden shadow-3xl flex flex-col md:flex-row items-stretch reveal border border-white/5">
         
         <div class="p-12 md:p-24 flex-1 flex flex-col justify-center text-center md:text-left">
-          <span class="text-label mb-6 block text-gray-400">Next Steps</span>
+          <span class="text-label mb-6 block text-gray-400">Let's build</span>
           <h2 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-8 tracking-tighter text-balance leading-[0.9]">
             You have two choices.
           </h2>
           <p class="text-2xl text-gray-400 mb-12 text-pretty leading-relaxed">
-            Stay in the loop or <span class="text-white font-black underline decoration-gray-500 underline-offset-8">break it.</span>
+            The internet is my playground. <span class="text-white font-black underline decoration-gray-500 underline-offset-8">If it doesn't earn, it doesn't stay.</span>
           </p>
           
           <div class="flex flex-wrap items-center justify-center md:justify-start gap-6">
             <a href="mailto:${CONTACT_EMAIL}" class="btn-glass-light py-4 px-10 text-lg">
-              Start building ${ICONS.arrowRight}
+              Deploy something ${ICONS.arrowRight}
             </a>
             <a href="${SOCIAL.linkedin}" target="_blank" rel="noopener noreferrer" class="btn-glass-dark border-white/20 py-4 px-10 text-lg">
               Join my journey
